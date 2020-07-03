@@ -8,7 +8,10 @@ Often, one button can be used to turn on and off lights. How could you do that w
 
 In this activity, you will use a variable to act as a toogle to allow one button to both turn on and off a random LED.
 
-## Step 1 - setup
+## Step 1 - Setup
 
 Start by removing the ``||basic:forever||`` block. Once removed, bring in a ``||input:on button pressed||`` block.
 
+## Step 2 - Make variables
+
+In the ``||variable:Variables||`` section, 
