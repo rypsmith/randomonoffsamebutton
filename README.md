@@ -2,7 +2,8 @@
 > Open this page at [https://rypsmith.github.io/randomonoffsamebutton/](https://rypsmith.github.io/randomonoffsamebutton/)
 ## Tutorial
 
-
+* [tutorial](/randomonoffsamebutton/tutorial) 
+* [start](https://makecode.microbit.org/#tutorial:github:rypsmith/randomonoffsamebutton/tutorial)
 
 
 ## Edit this project ![Build status badge](https://github.com/rypsmith/randomonoffsamebutton/workflows/MakeCode/badge.svg)
