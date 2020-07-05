@@ -14,7 +14,7 @@ Start by removing the ``||basic:forever||`` block. Once removed, bring in a ``||
 
 ## Step 2 - Make variables
 
-In the ``||variable:Variables||`` section, make 3 variables, called "Toggle", "RandomX", and "RandomY.
+In the ``||variable:Variables||`` section, make 3 variables, called "toggle", "randomX", and "randomY.
 
 ## Step 3 - If ... then ... else
 
@@ -43,6 +43,7 @@ input.onButtonPressed(Button.A, function () {
     }
 })
 let toggle = false
+toggle = false
 ```
 
 ## Step 5 - Conditional Statement Set-up
@@ -58,6 +59,7 @@ input.onButtonPressed(Button.A, function () {
     }
 })
 let toggle = false
+toggle = false
 ```
 
 ## Step 6 - Make the conditions
@@ -73,6 +75,7 @@ input.onButtonPressed(Button.A, function () {
     }
 })
 let toggle = false
+toggle = false
 ```
 
 ## Step 7 - Disable the button
@@ -87,6 +90,46 @@ input.onButtonPressed(Button.A, function () {
     	
     }
 })
+let toggle = false
+toggle = false
+```
+
+## Step 8 - Pick some random numbers
+
+Bring in a ``||variables:set randomX to...||`` block and a ``||variables:set randomY to...||`` block and place them underneith the ``||variables:set toggle to...||`` block. Put a ``||math:pick random||`` in each.
+
+```blocks
+input.onButtonPressed(Button.A, function () {
+    if (toggle == false) {
+        toggle = true
+        randomX = randint(0, 10)
+        randomY = randint(0, 10)
+    } else {
+    	
+    }
+})
+let randomY = 0
+let randomX = 0
+let toggle = false
+toggle = false
+```
+
+## Step 9 - Set the range for the random numbers.
+
+Remember that the range for the LED pixels is from 0 to 4, so adjust both ``||math:pick random||`` blocks so that they are picking between 0 and 4.
+
+```blocks
+input.onButtonPressed(Button.A, function () {
+    if (toggle == false) {
+        toggle = true
+        randomX = randint(0, 4)
+        randomY = randint(0, 4)
+    } else {
+    	
+    }
+})
+let randomY = 0
+let randomX = 0
 let toggle = false
 toggle = false
 ```
