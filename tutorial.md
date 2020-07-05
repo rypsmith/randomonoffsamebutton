@@ -48,7 +48,7 @@ toggle = false
 
 ## Step 5 - Conditional Statement Set-up
 
-A conditional statement - like an "if" statement, need some conditions to be true or false, in order to work. First we check to make sure ``||variable:toggle||`` is false. Get a ``||logic: = (equals)||`` block and place it inside the ``||logic:if then else||`` block.
+A conditional statement - like an "if" statement, need some conditions to be true or false, in order to work. First we check to make sure ``||variable:toggle||`` is false. Get a ``||logic: = (equals)||`` block and place it inside the ``||logic:if then||`` part of the block.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
@@ -124,6 +124,27 @@ input.onButtonPressed(Button.A, function () {
         toggle = true
         randomX = randint(0, 4)
         randomY = randint(0, 4)
+    } else {
+    	
+    }
+})
+let randomY = 0
+let randomX = 0
+let toggle = false
+toggle = false
+```
+
+## Step 10 - LED ON!
+
+Now use these random numbers you've made and turn on the LED that corresponds! Bring in a ``||led:plot x y||`` block. Place ``||variables:randomX||`` in the x value and ``||variables:randomY||`` in the y value. Once done, press the A button to make sure that one LED is turned on!
+
+```blocks
+input.onButtonPressed(Button.A, function () {
+    if (toggle == false) {
+        toggle = true
+        randomX = randint(0, 4)
+        randomY = randint(0, 4)
+        led.plot(randomX, randomY)
     } else {
     	
     }
