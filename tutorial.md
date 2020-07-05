@@ -154,3 +154,46 @@ let randomX = 0
 let toggle = false
 toggle = false
 ```
+
+## Step 11 - Get toggle set-up for 'off'
+
+Now that "on" is working for the one button, now "off" needs to work with the same button. First you need to adjust the ``||variables:set toggle to...||`` by setting it to ``||logic:false||``. Do this inside the "else" area of the ``||logic:if then else||`` block.
+
+```blocks
+input.onButtonPressed(Button.A, function () {
+    if (toggle == false) {
+        toggle = true
+        randomX = randint(0, 4)
+        randomY = randint(0, 4)
+        led.plot(randomX, randomY)
+    } else {
+        toggle = false
+    }
+})
+let randomY = 0
+let randomX = 0
+let toggle = false
+toggle = false
+```
+
+## Step 12 - Turn the LED off!
+
+Finally the last step! Bring in a ``||led:unplot x y||``. Again, place ``||variables:randomX||`` in the x value and ``||variables:randomY||`` in the y value. Once done, press the A button to make sure that same one LED is turned off!
+
+```blocks
+input.onButtonPressed(Button.A, function () {
+    if (toggle == false) {
+        toggle = true
+        randomX = randint(0, 4)
+        randomY = randint(0, 4)
+        led.plot(randomX, randomY)
+    } else {
+        toggle = false
+        led.unplot(randomX, randomY)
+    }
+})
+let randomY = 0
+let randomX = 0
+let toggle = false
+toggle = false
+```
