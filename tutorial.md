@@ -48,3 +48,14 @@ let toggle = false
 ## Step 5 - Conditional Statement Set-up
 
 A conditional statement - like an "if" statement, need some conditions to be true or false, in order to work. First we check to make sure ``||variable:toggle||`` is false. Get a ``||logic: = (equals)||`` block and place it inside the ``||logic:if then else||`` block.
+
+```blocks
+input.onButtonPressed(Button.A, function () {
+    if (0 == 0) {
+    	
+    } else {
+    	
+    }
+})
+let toggle = false
+```
