@@ -18,7 +18,7 @@ In the ``||variable:Variables||`` section, make 3 variables, called "Toggle", "R
 
 ## Step 3 - If ... then ... else
 
-To set up one button to do two different things, you need to put an ``||logic:If then else||`` block inside of the the ``||input:on button pressed||`` block.
+To set up one button to do two different things, you need to put an ``||logic:if then else||`` block inside of the the ``||input:on button pressed||`` block.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
@@ -44,3 +44,7 @@ input.onButtonPressed(Button.A, function () {
 })
 let toggle = false
 ```
+
+## Step 5 - Conditional Statement Set-up
+
+A conditional statement - like an "if" statement, need some conditions to be true or false, in order to work. First we check to make sure ``||variable:toggle||`` is false. Get a ``||logic: = (equals)||`` block and place it inside the ``||logic:if then else||`` block.
