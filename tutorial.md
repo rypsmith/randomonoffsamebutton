@@ -59,3 +59,33 @@ input.onButtonPressed(Button.A, function () {
 })
 let toggle = false
 ```
+
+## Step 6 - Make the conditions
+
+Now place a ``||variable:toggle||`` block in the first value (currently a zero) in the "equals" condition, and place a ``||logic:false||`` block in the second value for the condional statement.
+
+```blocks
+input.onButtonPressed(Button.A, function () {
+    if (toggle == false) {
+    	
+    } else {
+    	
+    }
+})
+let toggle = false
+```
+
+## Step 7 - Disable the button
+
+Now that the button has been pressed once, we first want to disable it from being activated again by the user, get a ``||variables:set toggle to...||`` block and insert it in the first part of the "if/else" statement. Add a ``||logic:true||`` block in the ``||variables:set toggle to...||`` block.
+
+```blocks
+input.onButtonPressed(Button.A, function () {
+    if (toggle == false) {
+    	toggle = true
+    } else {
+    	
+    }
+})
+let toggle = false
+```
