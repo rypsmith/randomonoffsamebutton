@@ -82,10 +82,11 @@ Now that the button has been pressed once, we first want to disable it from bein
 ```blocks
 input.onButtonPressed(Button.A, function () {
     if (toggle == false) {
-    	toggle = true
+        toggle = true
     } else {
     	
     }
 })
 let toggle = false
+toggle = false
 ```
